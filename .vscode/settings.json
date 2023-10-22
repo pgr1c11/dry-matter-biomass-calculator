@@ -1,0 +1,19 @@
+{
+  "python.envFile": "${workspaceFolder}/env",
+  "python.defaultInterpreterPath": "${workspaceFolder}/env/bin/python",
+  "jupyter.notebookFileRoot": "${workspaceFolder}",
+  "python.testing.pytestPath": "${workspaceFolder}/env/bin/pytest",
+  "python.terminal.activateEnvironment": true,
+  "python.terminal.activateEnvInCurrentTerminal": true,
+  "python.testing.pytestArgs": ["test", "-s"],
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestEnabled": true,
+  "python.linting.enabled": true,
+  "python.linting.lintOnSave": true,
+  "python.linting.mypyEnabled": true,
+  "python.linting.pylintEnabled": true,
+  "mypy.runUsingActiveInterpreter": true,
+  "files.insertFinalNewline": true,
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 10000
+}
