@@ -224,7 +224,7 @@ qtconsole==5.3.0
     # via jupyter
 qtpy==2.0.1
     # via qtconsole
-scipy==1.8.0
+scipy==1.11.1
     # via python_vscode_ds_template (setup.py)
 send2trash==1.8.0
     # via notebook
