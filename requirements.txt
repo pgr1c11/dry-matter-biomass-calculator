@@ -107,6 +107,8 @@ kiwisolver==1.4.5
     # via matplotlib
 lazy-object-proxy==1.9.0
     # via astroid
+lxml==5.2.1
+    # via nbconvert
 markupsafe==2.1.1
     # via
     #   jinja2
@@ -158,6 +160,7 @@ packaging==21.3
     # via
     #   ipykernel
     #   matplotlib
+    #   nbconvert
     #   pytest
     #   qtpy
 pandas==1.4.2
@@ -178,7 +181,7 @@ pluggy==1.0.0
     # via pytest
 prometheus-client==0.14.1
     # via notebook
-prompt-toolkit==3.0.29
+prompt-toolkit==3.0.43
     # via
     #   ipython
     #   jupyter-console
@@ -239,7 +242,7 @@ stack-data==0.2.0
     # via ipython
 terminado==0.13.3
     # via notebook
-testpath==0.6.0
+tinycss2==1.2.1
     # via nbconvert
 tomli==2.0.1
     # via
@@ -274,11 +277,10 @@ typing-extensions==4.1.1
 wcwidth==0.2.5
     # via prompt-toolkit
 webencodings==0.5.1
-    # via bleach
+    # via
+    #   bleach
+    #   tinycss2
 widgetsnbextension==3.6.0
     # via ipywidgets
 wrapt==1.14.1
     # via astroid
-
-# The following packages are considered to be unsafe in a requirements file:
-# setuptools
