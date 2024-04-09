@@ -143,3 +143,17 @@ class TruncatedNormal(Distribution):
             low=self.low,
             high=self.high)
         return _
+
+
+class Triangular(Distribution):
+    def __init__(self, low: float, high: float, mode: float) -> None:
+        self.low = low
+        self.high = high
+        self.mode = mode
+
+    def sample(self, shape: tuple, column_wise_sampling: bool) -> np.ndarray:
+        sample_function = (bd.triangular_1d
+                           if column_wise_sampling
+                           else bd.triangular_2d)
+        _: np.ndarray = sample_function(shape=shape, low=self.low, high=self.high, mode=self.mode)
+        return _
